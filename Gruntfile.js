@@ -1,5 +1,5 @@
-var current_version = '1.2.7';
-var new_version = '1.2.8';
+var current_version = '1.2.8';
+var new_version = '1.2.8.1';
 
 module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-replace');
@@ -29,8 +29,8 @@ module.exports = function(grunt) {
         options: {
           patterns: [
             {
-              match: 'dockerizedrupal/php-5.2:' + current_version,
-              replacement: 'dockerizedrupal/php-5.2:' + new_version
+              match: 'defconjuan/docker-php-5.2:' + current_version,
+              replacement: 'defconjuan/docker-php-5.2:' + new_version
             }
           ],
           usePrefix: false
